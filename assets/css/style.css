@@ -1,11 +1,33 @@
 * {
   box-sizing: border-box;
 }
-
+/* =====common======= */
 html {
   font-size: 62, 5%;
 }
 
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+}
+
+/* header */
+
+.main-content {
+  display: flex;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
 }
