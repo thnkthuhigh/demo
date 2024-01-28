@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .heading-lv2 {
   color: #171100;
   font-family: var(--font-heading);
@@ -49,6 +50,19 @@ a {
   background: #171100;
 }
 
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.break-all {
+  word-break: break-all;
+}
 .btn:hover {
   cursor: pointer;
   opacity: 0.8;
@@ -310,6 +324,7 @@ header .action {
 }
 
 .popular .course-list {
+  flex: 1;
   margin-top: 55px;
   gap: 30px;
   display: flex;
