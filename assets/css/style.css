@@ -399,3 +399,81 @@ header .action {
 .popular .course-item .btn-book:hover {
   background-color: var(--primary-color);
 }
+
+/* feedback */
+
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  transform: translateX(-100%);
+  transition: all ease 0.5s;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .desc1 {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .info .desc2 {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #634700;
+}
+
+.feedback-item .dot.active {
+  cursor: default;
+  background: var(--primary-color);
+}
+
+.feedback-item .info {
+  width: 34%;
+}
+
+.feedback-item .content {
+  margin-left: auto;
+  width: 66%;
+}
+
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54; /* 153.846% */
+}
