@@ -537,7 +537,7 @@ header .action {
 }
 /* ft2 */
 .features-2nd {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .features-2nd .body {
@@ -564,12 +564,14 @@ header .action {
 
 .blog .blog-list {
   gap: 30px;
+  overflow: hidden;
   display: flex;
   margin-top: 55px;
 }
 
 .blog .blog-item {
-  width: 33%;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #fff;
 }
@@ -644,9 +646,101 @@ header .action {
 }
 
 .blog .blog-item .btn {
+  font-size: 1.4rem;
   margin-top: 24px;
 }
 
 .blog .blog-item .btn:hover {
   background: var(--primary-color);
+}
+
+.blog .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 7px;
+}
+.blog .dot {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+}
+
+.blog .dot.active {
+  cursor: default;
+  background: #ffb900;
+}
+
+.footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+
+.footer .row {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+  display: flex;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.footer .title {
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #59554b;
+  padding-right: 48px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list li {
+  margin-top: 12px;
+}
+.footer .list a {
+  /* thay cho li vi the inline ko dung margin ddc */
+  /* display: inline-block;
+  margin-bottom: 12px; */
+  color: #bfbcb2;
+  font-size: 1.4;
+  line-height: 1.86; /* 185.714% */
+}
+
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
 }
