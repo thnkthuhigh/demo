@@ -4,8 +4,8 @@
 
 :root {
   --font-heading: "Sen", "sans-serif";
-  --primary-color: #ffb900;
-  --color-main: #fffcf4;
+  --primary-color: #bf00ff;
+  --color-main: #f5d0ff;
 }
 /* =====common======= */
 html {
@@ -166,7 +166,7 @@ header .action {
 }
 
 .hero-summary .icon {
-  width: 48px;
+  min-width: 48px;
   height: 48px;
   border-radius: 50%;
   display: flex;
@@ -205,7 +205,7 @@ header .action {
 .hero .content-block {
   width: 52%;
   padding-left: 130px;
-  padding-top: 64px;
+  padding-top: 60px;
 }
 
 .hero .heading {
